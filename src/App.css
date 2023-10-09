@@ -1,38 +1,75 @@
-.App {
+.container 
+{
+  width: 100%;
+  height: 85vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.name
+{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator
+{
+  padding: 10px;
+  border-radius: 2px;
+  background-color: rgb(68, 68, 68);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.new-button {
+  text-align: center; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.new-button input[type='button'] {
+  background-color: rgb(54, 54, 54); 
+  color: white; 
+  padding: 5px 20px;
+  font-size: 18px;
+  width: 400px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.new-button input[type='button']:hover {
+  background-color: rgb(165, 59, 59); 
+}
+
+
+form input
+{
+  border: none;
+  outline: 0;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  background-color: rgb(204, 204, 204);
+  margin: 5px;
+  border-radius: 2px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+form input[type="button"]:hover
+{
+  background-color: rgb(165, 59, 59); 
+}
+
+form .display
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form .display input
+{
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 5px 10px;
+  background-color: rgb(204, 204, 204);
 }
